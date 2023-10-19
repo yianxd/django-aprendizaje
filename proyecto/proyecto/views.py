@@ -37,3 +37,11 @@ def segundo(request):
                     'clase':obj1})
     doc=plt.render(ctx)
     return HttpResponse(doc)
+
+def index(request):
+    doc_e=open('./proyecto/pantillas/index.html')
+    plt=Template(doc_e.read())
+    doc_e.close()
+    ctx=Context()
+    doc=plt.render(ctx)
+    return HttpResponse(doc)

@@ -21,11 +21,13 @@ from proyecto.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('primero/',primero),
-    path('segundo/',segundo)
+    path('index/',index)
+    
 ]
 
 """
+    path('primero/',primero),
+    path('segundo/',segundo)
     path('prueba/',prueba),
     path('html/',hmtl),
     path('variable/',variable),
